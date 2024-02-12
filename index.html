@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doaa Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dd0d3a0ad4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ------------ start header ------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">Doaa</div>
+                <ul id="sideMenu">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                
+            </nav>
+
+            <div class="main">
+                <div class="intro">                    
+                    <h1>Doaa Ali</h1>
+                    
+                    <p>full stack Web Developer</p>
+                </div>
+                <div class="pic">
+                    <img src="woman.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------- end header ----------------------- -->
+    <!-- ---- start about -------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="title">about me</div>
+            <p>I am a qualified and professional web
+                 developer with five years of experience 
+                 in database administration and website design, Strong creative and analytical skills,
+                 Team player with an eye for detail. 
+            </p>
+            <div class="tab-title">
+                <p class="tab-links active-link" onclick="openTab(this,'skills')">Skills</p>
+                <p class="tab-links " onclick="openTab(this,'education')">Education</p>
+                <p class="tab-links " onclick="openTab(this,'experience')">experience</p>                
+            </div>
+            <div class="tab-content active-content" id="skills">
+                <ul>
+                    <li>
+                        <h4>Front-end Development:</h4>
+                        <div class="item">
+                            <p>HTML</p> 
+                            <div class="meter">
+                                <span style="width: 95%"></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p>CSS</p> 
+                            <div class="meter">
+                                <span style="width: 85%"></span>
+                            </div> 
+                        </div> 
+                        <div class="item">
+                            <p>JavaScript</p> 
+                            <div class="meter">
+                                <span style="width: 75%"></span>
+                            </div>  
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Back-end Development:</h4>
+                        <div class="item">
+                            <p>C#</p> 
+                            <div class="meter">
+                                <span style="width: 95%"></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p>Java</p> 
+                            <div class="meter">
+                                <span style="width: 85%"></span>
+                            </div> 
+                        </div> 
+                        <div class="item">
+                            <p>Node.js</p> 
+                            <div class="meter">
+                                <span style="width: 75%"></span>
+                            </div>  
+                        </div>    
+                    </li>
+                    <li>
+                        <h4>Database and Data Modeling:</h4>
+                        <div class="item">
+                            <p>SQL: Writing and executing database queries.</p> 
+                            <div class="meter">
+                                <span style="width: 95%"></span>
+                            </div>
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+
+                <div class="tab-content" id="education">                    
+                    <h4>Bachelor of Science in Computer Science</h4>
+                    <p class="edu">Assiut University <span>2004</span> </p>                                        
+                </div>
+
+                <div class="tab-content" id="experience">                    
+                    <h4>Assiut University , Egypt</h4>   
+                    <h4 >Web Developer<span> , 2004 - Now</span> </h4>   
+                    <ul>
+                        <li>Developed and maintained responsive web applications using HTML, CSS, and JavaScript.</li>
+                        <li>Implemented front-end frameworks like React for building interactive user interfaces.</li>
+                        <li>Collaborated with design teams to ensure seamless integration of UI/UX designs.</li>
+                        <li>Created and optimized server-side logic using Node.js and Express.</li>
+                        <li>Integrated APIs and third-party services to enhance application functionality.</li>
+                        <li>Managed databases using SQL and MongoDB, ensuring efficient data storage and retrieval.</li>
+                        <li>Conducted unit testing and debugging to ensure high-quality code.</li>
+                        <li>Worked closely with cross-functional teams to gather requirements and deliver solutions within project timelines.</li>
+                    </ul>   
+                </div>
+        </div>
+    </div>
+    <!-- ------------- end about ---------------- -->
+    <!-- ------------------- start services ----------------------- -->
+    <div id="services">
+        <div class="container">
+            <div class="title">services</div>
+            <div class="services-list">
+            <div class="card">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Web Development</h3>
+                <p>Design, develop, and deploy responsive and interactive websites using 
+                    a combination of front-end technologies (HTML, CSS, JavaScript)
+                     and back-end technologies (Node.js and ASP.NET)
+                </p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-database"></i>
+                <h3>Database Management</h3>
+                <p>Design, create, and manage databases to store and retrieve data 
+                    efficiently. This includes working with relational databases 
+                    SQL Server, as well as NoSQL databases MongoDB
+                    or Firebase.
+                </p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h3>API Development</h3>
+                <p>Build Application Programming Interfaces (APIs) to enable communication 
+                    and data exchange between different software systems.
+                </p>
+            </div>
+            <div class="card">
+                <i class="fa-brands fa-html5"></i>
+                <h3>Front-end Development</h3>
+                <p>Develop user interfaces (UI) and user experiences (UX) using HTML, CSS, 
+                    and JavaScript React frameworks . Implement responsive designs,
+                    optimize performance, and ensure cross-browser compatibility.
+                </p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Back-end Development</h3>
+                <p>Handle server-side logic, data integration, and business logic using
+                     programming languages Node.j and C# . Implement server-side frameworks
+                      and libraries.
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- --------------- end servicers -----------------------` -->
+    <!-- ------------- start portfolio ------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <div class="title">my work</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="1.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Login Page</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo temporibus numquam et? Ea sint, odit a fuga quo est dolor.</p>
+                        <a href="https://tharaa369.github.io/loginPage/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="2.jpeg" alt="">
+                    <div class="layer">
+                        <h3>FAQ Accordion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo temporibus numquam et? Ea sint, odit a fuga quo est dolor.</p>
+                        <a href="https://tharaa369.github.io/faq-accordion-main/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="3.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Result Summary</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo temporibus numquam et? Ea sint, odit a fuga quo est dolor.</p>
+                        <a href="https://tharaa369.github.io/results-summary/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ------------- end portfolio ------------ -->
+    <!-- -------------- start contact -------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="title">contact</div>
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-phone"></i>11111111111</p>
+                    <p><i class="fa-solid fa-envelope"></i>maild4work@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Egypt , assiut  </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a class="btn btn2" href="CVResume.pdf" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" id="name" required placeholder="Your Name">
+                        <input type="email" name="email" id="email" required placeholder="Your Email">
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Your Message"></textarea>
+                        <p id="sucess"></p>
+                        <button class="btn btn2">Submit</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------- end contact ---------------- -->
+    <script src="script.js"></script>
+</body>
+</html>
